@@ -8,8 +8,8 @@ use PHPUnit_Framework_TestCase;
 use BotMan\BotMan\Messages\Attachments\Video;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use BotMan\Drivers\Telegram\TelegramVideoDriver;
-use BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
+use DoisMundos\BotMan\Drivers\Telegram\TelegramVideoDriver;
+use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
 
 class TelegramVideoDriverTest extends PHPUnit_Framework_TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\Drivers\Telegram;
+namespace DoisMundos\BotMan\Drivers\Telegram;
 
 use BotMan\BotMan\Messages\Attachments\Audio;
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
+use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
 
 class TelegramAudioDriver extends TelegramDriver
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\Drivers\Telegram;
+namespace DoisMundos\BotMan\Drivers\Telegram;
 
 use BotMan\BotMan\Messages\Attachments\Location;
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;

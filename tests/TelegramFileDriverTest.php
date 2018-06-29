@@ -8,8 +8,8 @@ use PHPUnit_Framework_TestCase;
 use BotMan\BotMan\Messages\Attachments\File;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use BotMan\Drivers\Telegram\TelegramFileDriver;
-use BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
+use DoisMundos\BotMan\Drivers\Telegram\TelegramFileDriver;
+use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
 
 class TelegramFileDriverTest extends PHPUnit_Framework_TestCase
 {

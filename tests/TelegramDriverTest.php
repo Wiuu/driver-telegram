@@ -7,7 +7,7 @@ use BotMan\BotMan\Http\Curl;
 use BotMan\BotMan\Users\User;
 use PHPUnit_Framework_TestCase;
 use Illuminate\Support\Collection;
-use BotMan\Drivers\Telegram\TelegramDriver;
+use DoisMundos\BotMan\Drivers\Telegram\TelegramDriver;
 use BotMan\BotMan\Messages\Attachments\File;
 use BotMan\BotMan\Messages\Attachments\Audio;
 use BotMan\BotMan\Messages\Attachments\Image;
@@ -18,7 +18,7 @@ use BotMan\BotMan\Drivers\Events\GenericEvent;
 use Symfony\Component\HttpFoundation\Response;
 use BotMan\BotMan\Messages\Attachments\Location;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
-use BotMan\Drivers\Telegram\Exceptions\TelegramException;
+use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramException;
 
 class TelegramDriverTest extends PHPUnit_Framework_TestCase
 {
@@ -98,6 +98,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => 'chat_id',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -118,6 +119,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => 'chat_id',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -140,6 +142,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => 'chat_id',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Hi Julia',
@@ -448,6 +451,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => 'chat_id',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -469,6 +473,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => 'chat_id',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -655,6 +660,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -690,6 +696,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -745,6 +752,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -801,6 +809,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -863,6 +872,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -898,6 +908,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -934,6 +945,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -970,6 +982,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -1006,6 +1019,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -1043,6 +1057,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -1079,6 +1094,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -1124,6 +1140,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',
@@ -1131,6 +1148,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
         ], $htmlInterface);
 
         try {
+            //print_r($driver->getMessages()[0]); exit;
             $driver->getUser($driver->getMessages()[0]);
         } catch (\Throwable $t) {
             $this->assertSame(TelegramException::class, get_class($t));
@@ -1157,6 +1175,7 @@ class TelegramDriverTest extends PHPUnit_Framework_TestCase
                 ],
                 'chat' => [
                     'id' => '12345',
+                    'title' => 'title test'
                 ],
                 'date' => '1480369277',
                 'text' => 'Telegram Text',

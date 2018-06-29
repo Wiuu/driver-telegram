@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\Drivers\Telegram;
+namespace DoisMundos\BotMan\Drivers\Telegram;
 
 use Illuminate\Support\Collection;
 use BotMan\BotMan\Drivers\HttpDriver;
 use BotMan\BotMan\Messages\Incoming\Answer;
 use BotMan\BotMan\Messages\Attachments\File;
-use BotMan\Drivers\Telegram\Extensions\User;
+use DoisMundos\BotMan\Drivers\Telegram\Extensions\User;
 use BotMan\BotMan\Messages\Attachments\Audio;
 use BotMan\BotMan\Messages\Attachments\Image;
 use BotMan\BotMan\Messages\Attachments\Video;
@@ -18,7 +18,7 @@ use BotMan\BotMan\Messages\Attachments\Location;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;
 use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
-use BotMan\Drivers\Telegram\Exceptions\TelegramException;
+use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramException;
 
 class TelegramDriver extends HttpDriver
 {
@@ -223,7 +223,8 @@ class TelegramDriver extends HttpDriver
         } else {
             if(!$this->event->get('chat')['title']){
                 $messages = [
-                    new IncomingMessage($this->event->get('text'), $this->event->get('from')['id'], $this->event->get('chat')['id']),
+                    new IncomingMessage($this->event->get('text'), $this->event->get('from')['id'], $this->event->get('chat')['id'],
+                        $this->event),
                 ];
             }
             else{
@@ -235,11 +236,12 @@ class TelegramDriver extends HttpDriver
                     ),
                 ];
             }
+
+
         }
 
         $this->messages = $messages;
     }
-
 
     /**
      * @return bool

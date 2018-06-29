@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\Drivers\Telegram\Extensions;
+namespace DoisMundos\BotMan\Drivers\Telegram\Extensions;
 
 use Illuminate\Support\Collection;
 
