@@ -221,14 +221,25 @@ class TelegramDriver extends HttpDriver
                 new IncomingMessage('', $this->queryParameters->get('id'), $this->queryParameters->get('id'), $this->queryParameters),
             ];
         } else {
-            $messages = [
-                new IncomingMessage($this->event->get('text'), $this->event->get('from')['id'], $this->event->get('chat')['id'],
-                    $this->event),
-            ];
+            if(!$this->event->get('chat')['title']){
+                $messages = [
+                    new IncomingMessage($this->event->get('text'), $this->event->get('from')['id'], $this->event->get('chat')['id']),
+                ];
+            }
+            else{
+                $messages = [
+                    new IncomingMessage($this->event->get('text'), $this->event->get('from')['id'], $this->event->get('chat')['id'],
+                        array(
+                            'title_group' => $this->event->get('chat')['title']
+                        )
+                    ),
+                ];
+            }
         }
 
         $this->messages = $messages;
     }
+
 
     /**
      * @return bool
