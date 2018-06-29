@@ -1,12 +1,12 @@
 <?php
 
-namespace DoisMundos\BotMan\Drivers\Telegram;
+namespace BotMan\Drivers\Telegram;
 
 use Illuminate\Support\Collection;
 use BotMan\BotMan\Drivers\HttpDriver;
 use BotMan\BotMan\Messages\Incoming\Answer;
 use BotMan\BotMan\Messages\Attachments\File;
-use DoisMundos\BotMan\Drivers\Telegram\Extensions\User;
+use BotMan\Drivers\Telegram\Extensions\User;
 use BotMan\BotMan\Messages\Attachments\Audio;
 use BotMan\BotMan\Messages\Attachments\Image;
 use BotMan\BotMan\Messages\Attachments\Video;
@@ -18,7 +18,7 @@ use BotMan\BotMan\Messages\Attachments\Location;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;
 use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
-use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramException;
+use BotMan\Drivers\Telegram\Exceptions\TelegramException;
 
 class TelegramDriver extends HttpDriver
 {

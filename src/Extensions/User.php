@@ -1,6 +1,6 @@
 <?php
 
-namespace DoisMundos\BotMan\Drivers\Telegram\Extensions;
+namespace BotMan\Drivers\Telegram\Extensions;
 
 use BotMan\BotMan\Interfaces\UserInterface;
 use BotMan\BotMan\Users\User as BotManUser;

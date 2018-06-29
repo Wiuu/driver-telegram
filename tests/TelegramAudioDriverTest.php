@@ -8,8 +8,8 @@ use PHPUnit_Framework_TestCase;
 use BotMan\BotMan\Messages\Attachments\Audio;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramAudioDriver;
-use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
+use BotMan\Drivers\Telegram\TelegramAudioDriver;
+use BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
 
 class TelegramAudioDriverTest extends PHPUnit_Framework_TestCase
 {

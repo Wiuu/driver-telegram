@@ -8,8 +8,8 @@ use PHPUnit_Framework_TestCase;
 use BotMan\BotMan\Messages\Attachments\Image;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramPhotoDriver;
-use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
+use BotMan\Drivers\Telegram\TelegramPhotoDriver;
+use BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
 
 class TelegramPhotoDriverTest extends PHPUnit_Framework_TestCase
 {

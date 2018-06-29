@@ -3,8 +3,8 @@
 namespace Tests;
 
 use PHPUnit_Framework_TestCase;
-use DoisMundos\BotMan\Drivers\Telegram\Extensions\Keyboard;
-use DoisMundos\BotMan\Drivers\Telegram\Extensions\KeyboardButton;
+use BotMan\Drivers\Telegram\Extensions\Keyboard;
+use BotMan\Drivers\Telegram\Extensions\KeyboardButton;
 
 class TelegramKeyboardTest extends PHPUnit_Framework_TestCase
 {

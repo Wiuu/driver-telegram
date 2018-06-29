@@ -1,11 +1,11 @@
 <?php
 
-namespace DoisMundos\BotMan\Drivers\Telegram;
+namespace BotMan\Drivers\Telegram;
 
 use BotMan\BotMan\Messages\Attachments\Image;
 use Symfony\Component\HttpFoundation\Request;
 use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
+use BotMan\Drivers\Telegram\Exceptions\TelegramAttachmentException;
 
 class TelegramPhotoDriver extends TelegramDriver
 {

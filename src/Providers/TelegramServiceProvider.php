@@ -1,17 +1,17 @@
 <?php
 
-namespace DoisMundos\BotMan\Drivers\Telegram\Providers;
+namespace BotMan\Drivers\Telegram\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use BotMan\BotMan\Drivers\DriverManager;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramDriver;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramFileDriver;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramAudioDriver;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramPhotoDriver;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramVideoDriver;
+use BotMan\Drivers\Telegram\TelegramDriver;
+use BotMan\Drivers\Telegram\TelegramFileDriver;
+use BotMan\Drivers\Telegram\TelegramAudioDriver;
+use BotMan\Drivers\Telegram\TelegramPhotoDriver;
+use BotMan\Drivers\Telegram\TelegramVideoDriver;
 use BotMan\Studio\Providers\StudioServiceProvider;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramLocationDriver;
-use DoisMundos\BotMan\Drivers\Telegram\Console\Commands\TelegramRegisterCommand;
+use BotMan\Drivers\Telegram\TelegramLocationDriver;
+use BotMan\Drivers\Telegram\Console\Commands\TelegramRegisterCommand;
 
 class TelegramServiceProvider extends ServiceProvider
 {

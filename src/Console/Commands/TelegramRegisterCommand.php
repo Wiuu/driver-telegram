@@ -1,6 +1,6 @@
 <?php
 
-namespace DoisMundos\BotMan\Drivers\Telegram\Console\Commands;
+namespace BotMan\Drivers\Telegram\Console\Commands;
 
 use Illuminate\Console\Command;
 

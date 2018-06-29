@@ -7,7 +7,7 @@ use BotMan\BotMan\Http\Curl;
 use BotMan\BotMan\Users\User;
 use PHPUnit_Framework_TestCase;
 use Illuminate\Support\Collection;
-use DoisMundos\BotMan\Drivers\Telegram\TelegramDriver;
+use BotMan\Drivers\Telegram\TelegramDriver;
 use BotMan\BotMan\Messages\Attachments\File;
 use BotMan\BotMan\Messages\Attachments\Audio;
 use BotMan\BotMan\Messages\Attachments\Image;
@@ -18,7 +18,7 @@ use BotMan\BotMan\Drivers\Events\GenericEvent;
 use Symfony\Component\HttpFoundation\Response;
 use BotMan\BotMan\Messages\Attachments\Location;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
-use DoisMundos\BotMan\Drivers\Telegram\Exceptions\TelegramException;
+use BotMan\Drivers\Telegram\Exceptions\TelegramException;
 
 class TelegramDriverTest extends PHPUnit_Framework_TestCase
 {

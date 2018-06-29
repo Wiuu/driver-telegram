@@ -5,7 +5,7 @@ return array (
     0 => 
     array (
       'value' => 'stubs/telegram.php',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -18,7 +18,7 @@ return array (
     0 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\TelegramDriver',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -28,7 +28,7 @@ return array (
     1 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\TelegramAudioDriver',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -38,7 +38,7 @@ return array (
     2 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\TelegramFileDriver',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -48,7 +48,7 @@ return array (
     3 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\TelegramLocationDriver',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -58,7 +58,7 @@ return array (
     4 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\TelegramPhotoDriver',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -68,7 +68,7 @@ return array (
     5 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\TelegramVideoDriver',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 
@@ -81,7 +81,7 @@ return array (
     0 => 
     array (
       'value' => 'BotMan\\Drivers\\Telegram\\Console\\Commands\\TelegramRegisterCommand',
-      'package' => 'botman/2mundos-driver-telegram',
+      'package' => 'doismundos/botman-driver-telegram',
       'packageDir' => './',
       'priority' => 0.0,
       'metadata' => 

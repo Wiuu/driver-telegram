@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DoisMundos\\BotMan\\Drivers\\Telegram\\": "src/"
+            "BotMan\\Drivers\\Telegram\\": "src/"
         }
     },
     "autoload-dev": {
@@ -42,7 +42,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DoisMundos\\BotMan\\Drivers\\Telegram\\Providers\\TelegramServiceProvider"
+                "BotMan\\Drivers\\Telegram\\Providers\\TelegramServiceProvider"
             ]
         }
     }

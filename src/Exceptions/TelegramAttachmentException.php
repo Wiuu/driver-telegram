@@ -1,6 +1,6 @@
 <?php
 
-namespace DoisMundos\BotMan\Drivers\Telegram\Exceptions;
+namespace BotMan\Drivers\Telegram\Exceptions;
 
 use BotMan\BotMan\Exceptions\Base\DriverAttachmentException;
 
